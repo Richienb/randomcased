@@ -1,14 +1,25 @@
 /**
- * My awesome module.
- * @param input Lorem ipsum.
- * @param postfix Lorem ipsum.
+ * Convert a string to use RANdOmcasE.
+ * @param string The string to convert.
+ * @param seed The seed to use.
  * @example
  * ```
- * const theModule = require("the-module");
- * theModule("unicorns");
- * //=> 'unicorns & rainbows'
+ * const randomCased = require("randomcased");
+ *
+ * randomCased("abcdefghijklmnopqrstuvwxyz");
+ * //=> 'AbCDeFghIjkLMnoPQrstuVwxyZ'
+ *
+ * randomCased("abcdefghijklmnopqrstuvwxyz");
+ * //=> 'ABcDEFGHijklmNOPQrstUvwXYz'
+ *
+ * // Seeding
+ * randomCased("abcdefghijklmnopqrstuvwxyz", 123456789);
+ * //=> 'abcDefgHIjkLmnOpqRsTuvwXyz'
+ *
+ * randomCased("abcdefghijklmnopqrstuvwxyz", 123456789);
+ * //=> 'abcDefgHIjkLmnOpqRsTuvwXyz'
  * ```
 */
-declare function theModule(input: string, { postfix }: { postfix?: string }): string;
+declare function randomCased(string: string, seed?: number): string;
 
-export = theModule;
+export = randomCased;

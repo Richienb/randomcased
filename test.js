@@ -1,13 +1,14 @@
 import test from "ava"
-import theModule from "."
+import randomCased from "."
 
-test("main", (t) => {
-    t.throws(() => {
-        theModule(123)
-    }, {
-        instanceOf: TypeError,
-        message: "Expected a string, got number",
-    })
+test("basic functionality", (t) => {
+    t.is(typeof randomCased("abcdef"), "string")
+})
 
-    t.is(theModule("unicorns"), "unicorns & rainbows")
+test("seeding", (t) => {
+    t.is(randomCased("abcdef", 123), "abCDEf")
+    t.is(randomCased("abcdef", 123), "abCDEf")
+    t.is(randomCased("abcdef", 123), "abCDEf")
+    t.is(randomCased("abcdef", 123), "abCDEf")
+    t.is(randomCased("abcdef", 123), "abCDEf")
 })
