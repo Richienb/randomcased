@@ -1,6 +1,6 @@
 {
     "name": "randomcased",
-    "version": "0.0.0",
+    "version": "1.0.0",
     "description": "Convert a string to use RANdOmcasE.",
     "repository": "https://github.com/Richienb/randomcased.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
