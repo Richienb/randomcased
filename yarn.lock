@@ -4054,9 +4054,9 @@ safe-regex@^2.0.2:
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
 secure-chance@^1.0.2:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/secure-chance/-/secure-chance-1.1.0.tgz#480f9803011c51ce090a352d709111d4b887377b"
-  integrity sha512-HFz2Hi2cNgHU2BXihfhVnoiNV24s2JUpQaKJ4WYFyXQdqFHVuYgWEbIiztovjH/RefWG5FOHZgAUf5NLkfJg2g==
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/secure-chance/-/secure-chance-1.1.1.tgz#eb275fed1ee564acda610a78466f2fcc48102c62"
+  integrity sha512-o6IB3TmbOnA5qunMDoo+25YJkDNaEUuUUffMEmROfaEENvdiNWspKMCnlY1dYTozYap2vdBz59EdjKRXkBA0fQ==
   dependencies:
     env-crosser "^1.0.0"
     mutatable "^1.0.0"
