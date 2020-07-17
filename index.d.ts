@@ -20,6 +20,6 @@
  * //=> 'abcDefgHIjkLmnOpqRsTuvwXyz'
  * ```
 */
-declare function randomCased(string: string, seed?: number): string;
+declare function randomCased(string: string, seed?: number): string
 
-export = randomCased;
+export = randomCased

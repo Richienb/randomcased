@@ -1,14 +1,16 @@
-import test from "ava"
-import randomCased from "."
+const test = require("ava")
+const randomCased = require(".")
 
-test("basic functionality", (t) => {
-    t.is(typeof randomCased("abcdef"), "string")
+const fixture = "abcdef"
+
+test("basic functionality", t => {
+	t.is(randomCased(fixture).toLowerCase(), "abcdef")
 })
 
-test("seeding", (t) => {
-    t.is(randomCased("abcdef", 123), "abCDEf")
-    t.is(randomCased("abcdef", 123), "abCDEf")
-    t.is(randomCased("abcdef", 123), "abCDEf")
-    t.is(randomCased("abcdef", 123), "abCDEf")
-    t.is(randomCased("abcdef", 123), "abCDEf")
+test("seeding", t => {
+	t.is(randomCased(fixture, 123), "abCDEf")
+	t.is(randomCased(fixture, 123), "abCDEf")
+	t.is(randomCased(fixture, 123), "abCDEf")
+	t.is(randomCased(fixture, 123), "abCDEf")
+	t.is(randomCased(fixture, 123), "abCDEf")
 })
